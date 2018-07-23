@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Orbillo/MrWestV2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Orbillo/MrWestV2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Fill-1" stroke="#02072F" stroke-width="0.25" fill="#02072F" points="13.7296605 31 12.3766816 34.7444804 10.9410634 31 10.0550929 31 8.6194747 34.7444804 7.26649584 31 6 31 8.16207559 37 9.04804612 37 10.4951954 33.2025316 11.950032 37 12.8360026 37 15 31"></polygon>
+        <circle id="Oval" stroke="#02072F" stroke-width="1.5" fill-rule="nonzero" cx="40" cy="34" r="9.25"></circle>
+        <path d="M20,34 L60,34" id="Path-19" stroke="#02072F" stroke-width="1.5" fill-rule="nonzero"></path>
+        <path d="M40,14 L40,53" id="Path-2" stroke="#02072F" stroke-width="1.5" fill-rule="nonzero"></path>
+        <path d="M30.5,23.5 L50.5,43.5" id="Path-3-Copy" stroke="#02072F" stroke-width="1.5" fill-rule="nonzero" transform="translate(40.500000, 33.500000) scale(-1, 1) translate(-40.500000, -33.500000) "></path>
+        <path d="M30.5,24.5 L50.5,44.5" id="Path-3" stroke="#02072F" stroke-width="1.5" fill-rule="nonzero"></path>
+    </g>
+</svg>

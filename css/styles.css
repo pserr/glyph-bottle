@@ -135,6 +135,9 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
+#jupiter .pos {
+    animation-name: jupiter-invert; }
+
 #sun, .planet, #earth .moon {
   position: absolute;
   top: 50%;
@@ -148,10 +151,10 @@ body {
 #sun {
   height: 2.5em;
   width: 2em;
-  margin-left: -0.75em;
   background-color: rgba(255, 160, 60, 0);
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+}
 
 .planet {
   height: 1em;
@@ -249,6 +252,25 @@ body {
   100% {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
 
+@keyframes jupiter-invert {
+      0% {
+        transform: rotateX(-90deg) rotateY(360deg) rotateZ(30deg);
+        }
+
+      25% {transform: rotateX(-90deg) rotateY(270deg) rotateZ(0deg);
+          }
+      
+      50% {transform: rotateX(-90deg) rotateY(180deg) rotateZ(-30deg);
+        }
+
+      75% { transform: rotateX(-90deg) rotateY(90deg) rotateZ(0deg);
+            }
+    
+      100% {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(30deg);
+    }
+}
+
 /* --------------------------------------------------------------------------- opening */
 .view-3D .opening #sun,
 .view-3D .opening .orbit,
@@ -272,16 +294,13 @@ body {
 .view-3D #solar-system {
   transform: rotateX(75deg) rotateY(0deg); }
 
-.view-3D #solar-system .orbit-one {
-    transform: rotateX(75deg) rotateY(0deg); }
-
 /* .view-3D #jupiter {
     transform: rotateX(15deg) !important; } */
   
 
 .view-3D #sun {
-  transform: rotateX(-90deg) rotateZ(0deg) !important; 
-display: none;}
+  transform: rotateX(-90deg) rotateZ(0deg) translateZ(-200px) translateX(-20px) !important;
+}
 
 
 /* --------------------------------------------------------------------------- large zoom */
@@ -509,12 +528,12 @@ display: none;}
   top: 50%; }
 
 #earth  .line {
-    width: 50%;
+    width: 43em;
     height: 50%;
     position: absolute;
     top: 0;
-    right: 0;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+    right: 5em;
+    border-bottom: 2px solid #02072F;
   }
 
 #earth .planet {
@@ -533,11 +552,11 @@ display: none;}
 
 #mars .line {
     width: 50%;
-    height: 50%;
+    height: 51em;
     position: absolute;
-    bottom: 0;
+    bottom: 5em;
     left: 0;
-    border-right: 3px solid rgba(0, 0, 0, 0.4);
+    border-right: 2px solid #02072F;
   }
 
 #mars .planet {
@@ -547,15 +566,15 @@ display: none;}
 /* --------------------------------------------------------------------------- jupiter ; pos: Right */
 #jupiter .pos {
   left: 100%;
-  top: 50%; }
+  top: 50%;}
 
 #jupiter  .line {
-    width: 50%;
+    width: 15em;
     height: 50%;
     position: absolute;
     top: 0;
-    right: 0;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+    right: 5em;
+    border-bottom: 2px solid #02072F;
   }
 
 
@@ -565,12 +584,12 @@ display: none;}
   top: 50%; }
 
 #saturn  .line {
-    width: 50%;
+    width: 40em;
     height: 50%;
     position: absolute;
     top: 0;
-    left: 0;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+    left: 5em;
+    border-bottom: 2px solid #02072F;
   }
 
 #saturn .planet {
@@ -583,12 +602,12 @@ display: none;}
   top: 50%; }
 
 #uranus  .line {
-    width: 50%;
+    width: 58em;
     height: 50%;
     position: absolute;
     top: 0;
-    left: 0;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+    left: 5em;
+    border-bottom: 2px solid #02072F;
   }
 
 #uranus .planet {
@@ -602,11 +621,11 @@ display: none;}
 
 #neptune  .line {
     width: 50%;
-    height: 50%;
+    height: 70em;
     position: absolute;
-    top: 0;
+    top: 5em;
     right: 0;
-    border-left: 3px solid rgba(0, 0, 0, 0.4);
+    border-left: 2px solid #02072F;
   }
 
 #neptune .planet {
